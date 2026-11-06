@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignacion</title>
+</head>
+<body>
+    <header>
+        <p>Gestión de ambientes e instructores</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="../index.html">Cursos</a></li>
+                <li><a href="#">Municipios</a></li>
+                <li><a href="#">Disponibilidad</a></li>
+                <li><a href="asignacion.html">Asignacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section aria-labelledby="titulo-filtros">
+            <h1 id="asignacion-cursos">Formulario de asignació</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Curso</legend>
+                    <label for="ficha">Ficha</label>
+                    <select id="ficha" name="ficha" required>
+                        <option value="">--</option>
+                        <option value="100001">100001 Análisis y Desarrollo de Software</option>
+                        <option value="100002">100002 Análisis y Desarrollo de Software</option>
+                        <option value="100003">100003 Análisis y Desarrollo de Software</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <legend>Ubicación</legend>
+                    <label for="municipio">Municipio</label>
+                    <select id="munucipio" name="municipio" required>
+                        <option value="">--</option>
+                        <option value="puerto-asís">Puerto Asís</option>
+                        <option value="mocoa">Mocoa</option>
+                        <option value="orito">Orito</option>
+                    </select>
+                    <label for="sede">Sede</label>
+                    <select id="sede" name="sede" required>
+                        <option value="">--</option>
+                        <option value="1">CAAA - 1</option>
+                        <option value="2">CAAA - 2</option>
+                        <option value="3">CAAA - 3</option>
+                    </select>
+                    <label for="aula">Aula</label>
+                    <select id="aula" name="aula" required>
+                        <option value="">--</option>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                    </select>
+                </fieldset> 
+                <fieldset>
+                    <legend>Instructor</legend>
+                    <label for="instructor-manual">Instructor Manual</label>
+                    <input type="text" id="instructor-manual" name="instructor-manual" placeholder="Ingrese el nombre del instrcutor" required>
+                    <br>
+                    <label for="instructor">Instructor</label>
+                    <select name="instructor" id="instructor">
+                        <option value="">--</option>
+                        <option value="instructor-1">Instructor 1</option>
+                        <option value="instructor-2">Instructor 2</option>
+                        <option value="instructor-3">Instructor 3</option>
+                        <option value="instructor-4">Instructor 4</option>
+                    </select>
+                    <label for="inicio">Hora de inicio</label>
+                    <input type="time" id="inicio" name="inicio" min="6:00" max="24:00" step="1800" aria-describedby="ayuda-horas" required>
+                </fieldset>   
+                <button type="submit">Revisar asignación</button>      
+            </form>
+        </section>    
+    </main>
+    <footer>
+        <p>Centro Agroforestal y Acuícola Arapaima - SENA Regional Putumayo</p>
+    </footer>
+</body>
+</html>
