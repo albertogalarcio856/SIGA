@@ -71,6 +71,11 @@
     color: var(--color-ocupado-texto);
 }
 
+.grilla-semanal [role="cell"]:hover{
+    background: var(--color-primario-claro);
+    cursor: pointer;
+}
+
 .leyenda{
     display: flex;
     flex-wrap: wrap;
@@ -99,6 +104,41 @@
     background: var(--color-ocupado);
 }
 
+/* mapa de municipios */
+.mapa-dispisicion{
+    display: grid;
+    gap: var(--espacio-6);
+}
+
+@media (min-width: 1024px){
+    .mapa-dispisicion{
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+}
+
+.mapa-figura{
+    margin: 0;
+}
+
+.mapa{
+    width: 100%;
+    height: auto;
+}
+.mapa path{
+    fill: #99f6e4;
+    stroke: #ffffff;
+    stroke-width: 2;
+    cursor: pointer;
+    transition: fill 0.2s ease;
+}
+.mapa path:hover{
+    fill: #2dd4bf;
+}
+.mapa path:focus-visible{
+    outline: none;
+    fill: var(--color-secundario);
+}
 
 /* Formulario */
 .campo{
