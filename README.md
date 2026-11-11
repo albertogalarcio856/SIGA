@@ -15,3 +15,4 @@ repositorio clase: https://github.com/Mauricio555555/ControlDeAmbientes.git
 INTEGRANTES:
 Alberto Galarcio
 Yerson tobar
+Katherine Maingues
